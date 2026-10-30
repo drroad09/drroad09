@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn to Write Thai</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: #f4f8fc;
+        padding: 30px 15px;
+    }
+
+    .lesson {
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 3px 12px #cccccc;
+    }
+
+    h1 { color: #234b70; }
+
+    .thai-letter {
+        font-family: "Noto Sans Thai", Tahoma, sans-serif;
+        font-size: 65px;
+        color: #234b70;
+    }
+
+    svg {
+        width: 240px;
+        height: 200px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .stroke {
+        fill: none;
+        stroke: #1976d2;
+        stroke-width: 7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+    }
+
+    .stroke.visible {
+        stroke-dashoffset: 0;
+    }
+
+    button {
+        background: #1976d2;
+        color: white;
+        border: none;
+        padding: 12px 18px;
+        margin: 6px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover { background: #125aa0; }
+
+    button:disabled {
+        background: #aab7c4;
+        cursor: not-allowed;
+    }
+
+    #status {
+        min-height: 24px;
+        color: #234b70;
+        font-weight: bold;
+    }
+  
+
+.guide {
+    fill: none;
+    stroke: #d5dce3;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.stroke {
+    fill: none;
+    stroke: #1976d2;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+.stroke.visible {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1.8s ease-in-out;
+}
+.handwriting {
+    font-family: "Tahoma", sans-serif;
+    font-size: 110px;
+    font-weight: normal;
+    color: #234b70;
+}
+  
+.thai-guide {
+    font-family: Tahoma, sans-serif;
+    font-size: 160px;
+    fill: #d5dce3;
+}
+
+#instruction.completed {
+    color: #2e9d58;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lesson-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.chicken {
+    width: 130px;
+    height: 130px;
+}
+
+.chicken-label {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 5px;
+}
+
+.chicken-label span {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    color: #666;
+}
+.chicken-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<div class="lesson">
+    <h1>Learn to Write Thai</h1>
+
+    <div class="thai-letter handwriting">ก</div>
+    <h2>Ko Kai</h2>
+    <p>ก ไก่ — ko kai (chicken)</p>
+
+<div class="lesson-content">
+    
+	<svg id="writing" viewBox="0 0 220 180" role="img" aria-label="Thai letter Ko Kai">
+
+    	<!-- Faint gray Thai character guide -->
+    	<text x="110" y="150" text-anchor="middle" class="thai-guide">ก</text>
+  
+  	<circle cx="65" cy="145" r="6" fill="#2e9d58"></circle>
+  
+  	<!-- green arrow -->
+  	<line x1="48" y1="132" x2="48" y2="112" stroke="#2e9d58" stroke-width="3" stroke-linecap="round"></line>
+
+		<polygon points="42,118 48,108 54,118" fill="#2e9d58"></polygon>
+  
+
+
+		<!-- Blue writing path -->
+		<!-- Section 1: Upward movement and initial curve -->
+		<path class="stroke" d="M 80,140
+         L 80,105
+         Q 80,95 90,95
+         Q 100,95 94,85">
+    </path>
+
+		<!-- Section 2: Curve over the top -->
+		<path class="stroke" d="M 94,85
+         Q 88,78 80,85
+         Q 80,73 98,73
+         Q 115,63 138,73
+         Q 145,78 145,90">
+    </path>
+
+		<!-- Section 3: Downward movement -->
+		<path class="stroke" d="M 145,90
+         L 145,140">
+    </path>
+
+  
+	</svg>
+
+  
+	
+  <div class="chicken-container">
+    <!-- chicken -->
+
+  
+	<svg class="chicken" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Body -->
+    <ellipse cx="72" cy="88" rx="43" ry="35" fill="#FFD95A" stroke="#D99A24" stroke-width="3"></ellipse>
+
+    <!-- Wing -->
+    <ellipse cx="65" cy="94" rx="20" ry="15" fill="#FFE98A" stroke="#D99A24" stroke-width="2"></ellipse>
+
+    <!-- Head -->
+    <circle cx="105" cy="48" r="25" fill="#FFD95A" stroke="#D99A24" stroke-width="3"></circle>
+
+    <!-- Comb -->
+    <path d="M92 25 Q87 10 98 17 Q105 3 111 19 Q123 12 119 29" fill="#EF6262" stroke="#C94747" stroke-width="2"></path>
+
+    <!-- Eye -->
+    <circle cx="114" cy="44" r="3.5" fill="#333"></circle>
+
+    <!-- Beak -->
+    <path d="M128 51 L143 57 L128 63 Z" fill="#F28C28" stroke="#D87518" stroke-width="2"></path>
+
+    <!-- Legs -->
+    <path d="M60 120 L58 132 M58 132 L49 137 M58 132 L67 137
+             M91 119 L93 132 M93 132 L84 137 M93 132 L102 137" fill="none" stroke="#D87518" stroke-width="3" stroke-linecap="round"></path>
+
+	</svg>
+    <p class="chicken-label">
+        ไก่
+        <span>Chicken</span>
+    </p>
+  </div>
+  
+</div>
+
+<p id="instruction" class="">Click Next Stroke to begin!</p>
+
+    <button id="nextButton" onclick="nextStroke()" class="">Next Stroke</button>
+    <button onclick="resetStroke()">Reset</button>
+
+    <p id="status" aria-live="polite">Ready! Click Next Stroke.</p>
+</div>
+
+<script>
+    const strokes = document.querySelectorAll(".stroke");
+    const nextButton = document.getElementById("nextButton");
+    const status = document.getElementById("status");
+
+    let currentSection = 0;
+
+const instructions = [
+    "Step 1: Start at the bottom and move upward.",
+    "Step 2: Curve over the top.",
+    "Step 3: Continue downward to finish.",
+];
+
+function nextStroke() {
+    const strokes = document.querySelectorAll(".stroke");
+    const instruction = document.getElementById("instruction");
+
+    if (currentSection < strokes.length) {
+        strokes[currentSection].classList.add("visible");
+        instruction.textContent = instructions[currentSection];
+        currentSection++;
+    } else {
+        instruction.textContent = "Well done! You completed ก (Ko Kai)! 🎉";
+				instruction.classList.add("completed");
+    }
+}
+  function resetStroke() {
+    const strokes = document.querySelectorAll(".stroke");
+
+    strokes.forEach(stroke => {
+        stroke.classList.remove("visible");
+    });
+		
+    document.getElementById("instruction").textContent =
+    "Click Next Stroke to begin!";
+
+		document.getElementById("instruction").classList.remove("completed");
+    
+    currentSection = 0;
+}
+
+    
+</script>
+
+</body></html>
